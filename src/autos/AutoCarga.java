@@ -1,3 +1,4 @@
+
 public class AutoCarga extends Autos implements Girar, Carga, Aceleracion{
 
     public AutoCarga(){
@@ -9,22 +10,21 @@ public class AutoCarga extends Autos implements Girar, Carga, Aceleracion{
     }
     @Override
     public String acelerar() {
-        // TODO Auto-generated method stub
-        return null;
+        return ("\n      - Su aceleracion es baja");
     }
     @Override
     public String carga() {
-        // TODO Auto-generated method stub
-        return null;
+        return ("\n      - Permite transportar materiales");
     }
     @Override
     public void girarDerecha() {
-        // TODO Auto-generated method stub
+        System.out.println("\n    El vehiculo giro hacia la derecha");
         
     }
     @Override
     public void girarIzquierda() {
-        // TODO Auto-generated method stub
+        System.out.println("\n    El vehiculo giro hacia la izquierda");
+        
         
     }
     @Override
@@ -32,6 +32,7 @@ public class AutoCarga extends Autos implements Girar, Carga, Aceleracion{
         return super.toString() + "\n\n    * Descripcion: " + carga() + acelerar();
         
     }
+    
 
     
     
